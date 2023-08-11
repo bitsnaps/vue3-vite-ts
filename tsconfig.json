@@ -12,7 +12,8 @@
 
     /* Added */
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    /* Alredy in tsconfig.node.json */
+    /* "allowSyntheticDefaultImports": true, */
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {

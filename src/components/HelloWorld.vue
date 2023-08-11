@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Ref, ref } from 'vue'
-import { useCounterStore } from '../store/counter'
+import { ref } from 'vue'
+import { useCounterStore } from '@/store/counter'
 
 
 
@@ -12,7 +12,7 @@ const countStore = useCounterStore()
 let count = ref<number>(0)
 
 if (!count){
-  count = countStore.count
+  count = countStore.count as number
 }
 
 </script>
