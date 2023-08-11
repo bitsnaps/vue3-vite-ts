@@ -32,6 +32,32 @@ pnpm install
 pnpm add vue-router@4 axios vue-meta@next pinia@next @vueuse/core
 ```
 
+# Testing with Vitest
+
+```bash
+pnpm add -D vitest
+
+# Code Coverage
+pnpm i -D @vitest/coverage-v8
+
+# You can also use istanbul instead of v8:
+#pnpm -D @vitest/coverage-istanbul
+```
+Do not forget to add these lines to `package.json`:
+```
+  "scripts": {
+    ...
+    "test":"vitest",
+    "coverage": "vitest run --coverage"
+  }
+```
+A simple unit test example can be found at `tests/test.sum.js`, then run:
+```
+pnpm test # for testing
+pnpm coverage # for code coverage
+```
+
+
 ## Updated Configurations
 Original config `tsconfig.josn`:
 ```json
