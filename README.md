@@ -57,7 +57,7 @@ pnpm test # for testing
 pnpm coverage # for code coverage
 ```
 
-Add `jsdom` (latest Node v14 compatible) and `@vue/test-utils` to test components:
+In order to test components in an isolated environnement we'll need to add `jsdom` (latest Node v14 compatible) and `@vue/test-utils` to `mount()` and test components and using a `stub`:
 ```
 pnpm add -D jsdom@^21.1.2 @vue/test-utils
 ```
