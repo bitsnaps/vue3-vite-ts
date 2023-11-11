@@ -63,6 +63,9 @@ pnpm add -D jsdom@^21.1.2 @vue/test-utils
 ```
 Now, check the `tests/About.spec.js` test file.
 
+You can also -optionally- install `@vitest/ui` then run it using: `vitest --ui` or by passing `test --ui` to your `test` command.
+
+
 ## Updated Configurations
 Original config `tsconfig.josn`:
 ```json
