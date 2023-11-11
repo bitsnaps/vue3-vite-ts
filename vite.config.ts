@@ -16,6 +16,7 @@ export default defineConfig({
   test: {
     // Here we extend the default Vitest's default options
     exclude: [...configDefaults.exclude, 'e2e/*'],
+    globals: true,
     environment: 'jsdom',
     root: fileURLToPath(new URL('./', import.meta.url))
   }
