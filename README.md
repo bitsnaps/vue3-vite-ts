@@ -57,6 +57,11 @@ pnpm test # for testing
 pnpm coverage # for code coverage
 ```
 
+Add `jsdom` (latest Node v14 compatible) and `@vue/test-utils` to test components:
+```
+pnpm add -D jsdom@^21.1.2 @vue/test-utils
+```
+Now, check the `tests/About.spec.js` test file.
 
 ## Updated Configurations
 Original config `tsconfig.josn`:
